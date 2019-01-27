@@ -47,7 +47,7 @@ section h3.section-subheading {
 
 @media (min-width: 768px) {
   section {
-    padding: 125px 0 50px 0;
+    padding:50px 0 50px 0;
   }
 }
 
@@ -100,8 +100,21 @@ img::-moz-selection {
   background: transparent;
 }
 
+/*------mainNav-------*/
+ul,li{list-style:none;margin:0;padding: 0;}
+ul.login{position: absolute;right:100px;top:0;display:none;}
+ul.login:after{content:"";display:block;clear:both;}
+ul.login li{float:left;padding-right:20px;}
+ul.login li a{color:#fff;text-decoration:none;}
+ul.login li a:hover{font-weight:bold;color:#cdf;}
+
+li.lo{margin:0 auto;}
+li.lo:after{content: "";display: block;clear: both;}
+li.lo a{float:left;margin-right:30px;}
+li.lo a:last-child{margin-right:0px;}
+
 #mainNav {
-  background-color: #212529;
+  background: #364564;
 }
 
 #mainNav .navbar-toggler {
@@ -137,7 +150,10 @@ img::-moz-selection {
   color: #ccddff;
 }
 
+
 @media (min-width: 992px) {
+  ul.login{position: absolute;right:100px;top: 10px;display:block;}
+
   #mainNav {
     padding-top: 25px;
     padding-bottom: 25px;
@@ -155,7 +171,7 @@ img::-moz-selection {
     padding: 1.1em 1em !important;
   }
   #mainNav.navbar-shrink {
-    padding-top: 0;
+    padding-top: 20px;
     padding-bottom: 0;
     background-color: #364564;
   }
@@ -164,11 +180,10 @@ img::-moz-selection {
     padding: 12px 0;
   }
 }
-
 header.masthead {
   text-align: center;
   color: white;
-  background-image: url("../images/header-bg3.jpg");
+  background-image: url("../images/cafe.jpg");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
